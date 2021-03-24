@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8230F58C2607974D00E56154 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230F58B2607974D00E56154 /* GameViewController.swift */; };
+		823400AB260A5E1D004999C8 /* SKOverlays in Resources */ = {isa = PBXBuildFile; fileRef = 823400AA260A5E1D004999C8 /* SKOverlays */; };
+		82340101260A7B9D004999C8 /* LevelStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823400FE260A7B9D004999C8 /* LevelStats.swift */; };
+		82340102260A7B9D004999C8 /* LevelFailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823400FF260A7B9D004999C8 /* LevelFailed.swift */; };
+		82340103260A7B9D004999C8 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82340100260A7B9D004999C8 /* MainMenu.swift */; };
+		824E018F2606A41E003C7BB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E018E2606A41E003C7BB2 /* AppDelegate.swift */; };
+		824E01912606A41E003C7BB2 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 824E01902606A41E003C7BB2 /* art.scnassets */; };
+		824E01962606A41E003C7BB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824E01942606A41E003C7BB2 /* Main.storyboard */; };
+		824E01982606A41F003C7BB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824E01972606A41F003C7BB2 /* Assets.xcassets */; };
+		824E01A32606A41F003C7BB2 /* Crazy_CartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E01A22606A41F003C7BB2 /* Crazy_CartsTests.swift */; };
+		824E01AE2606A41F003C7BB2 /* Crazy_CartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E01AD2606A41F003C7BB2 /* Crazy_CartsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		824E019F2606A41F003C7BB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 824E01832606A41E003C7BB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 824E018A2606A41E003C7BB2;
+			remoteInfo = "Crazy Carts";
+		};
+		824E01AA2606A41F003C7BB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 824E01832606A41E003C7BB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 824E018A2606A41E003C7BB2;
+			remoteInfo = "Crazy Carts";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8230F58B2607974D00E56154 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		823400AA260A5E1D004999C8 /* SKOverlays */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SKOverlays; path = ../../SKOverlays; sourceTree = "<group>"; };
+		823400FE260A7B9D004999C8 /* LevelStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelStats.swift; sourceTree = "<group>"; };
+		823400FF260A7B9D004999C8 /* LevelFailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelFailed.swift; sourceTree = "<group>"; };
+		82340100260A7B9D004999C8 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		824E018B2606A41E003C7BB2 /* Crazy Carts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crazy Carts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		824E018E2606A41E003C7BB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		824E01902606A41E003C7BB2 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		824E01952606A41E003C7BB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		824E01972606A41F003C7BB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		824E01992606A41F003C7BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		824E019E2606A41F003C7BB2 /* Crazy CartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crazy CartsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		824E01A22606A41F003C7BB2 /* Crazy_CartsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crazy_CartsTests.swift; sourceTree = "<group>"; };
+		824E01A42606A41F003C7BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		824E01A92606A41F003C7BB2 /* Crazy CartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crazy CartsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		824E01AD2606A41F003C7BB2 /* Crazy_CartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crazy_CartsUITests.swift; sourceTree = "<group>"; };
+		824E01AF2606A41F003C7BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		824E01882606A41E003C7BB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		824E019B2606A41F003C7BB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		824E01A62606A41F003C7BB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		824E01822606A41E003C7BB2 = {
+			isa = PBXGroup;
+			children = (
+				824E018D2606A41E003C7BB2 /* Crazy Carts */,
+				824E01A12606A41F003C7BB2 /* Crazy CartsTests */,
+				824E01AC2606A41F003C7BB2 /* Crazy CartsUITests */,
+				824E018C2606A41E003C7BB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		824E018C2606A41E003C7BB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				824E018B2606A41E003C7BB2 /* Crazy Carts.app */,
+				824E019E2606A41F003C7BB2 /* Crazy CartsTests.xctest */,
+				824E01A92606A41F003C7BB2 /* Crazy CartsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		824E018D2606A41E003C7BB2 /* Crazy Carts */ = {
+			isa = PBXGroup;
+			children = (
+				823400FF260A7B9D004999C8 /* LevelFailed.swift */,
+				823400FE260A7B9D004999C8 /* LevelStats.swift */,
+				82340100260A7B9D004999C8 /* MainMenu.swift */,
+				824E018E2606A41E003C7BB2 /* AppDelegate.swift */,
+				8230F58B2607974D00E56154 /* GameViewController.swift */,
+				824E01902606A41E003C7BB2 /* art.scnassets */,
+				824E01942606A41E003C7BB2 /* Main.storyboard */,
+				823400AA260A5E1D004999C8 /* SKOverlays */,
+				824E01972606A41F003C7BB2 /* Assets.xcassets */,
+				824E01992606A41F003C7BB2 /* Info.plist */,
+			);
+			path = "Crazy Carts";
+			sourceTree = "<group>";
+		};
+		824E01A12606A41F003C7BB2 /* Crazy CartsTests */ = {
+			isa = PBXGroup;
+			children = (
+				824E01A22606A41F003C7BB2 /* Crazy_CartsTests.swift */,
+				824E01A42606A41F003C7BB2 /* Info.plist */,
+			);
+			path = "Crazy CartsTests";
+			sourceTree = "<group>";
+		};
+		824E01AC2606A41F003C7BB2 /* Crazy CartsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				824E01AD2606A41F003C7BB2 /* Crazy_CartsUITests.swift */,
+				824E01AF2606A41F003C7BB2 /* Info.plist */,
+			);
+			path = "Crazy CartsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		824E018A2606A41E003C7BB2 /* Crazy Carts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 824E01B22606A41F003C7BB2 /* Build configuration list for PBXNativeTarget "Crazy Carts" */;
+			buildPhases = (
+				824E01872606A41E003C7BB2 /* Sources */,
+				824E01882606A41E003C7BB2 /* Frameworks */,
+				824E01892606A41E003C7BB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Crazy Carts";
+			productName = "Crazy Carts";
+			productReference = 824E018B2606A41E003C7BB2 /* Crazy Carts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		824E019D2606A41F003C7BB2 /* Crazy CartsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 824E01B52606A41F003C7BB2 /* Build configuration list for PBXNativeTarget "Crazy CartsTests" */;
+			buildPhases = (
+				824E019A2606A41F003C7BB2 /* Sources */,
+				824E019B2606A41F003C7BB2 /* Frameworks */,
+				824E019C2606A41F003C7BB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				824E01A02606A41F003C7BB2 /* PBXTargetDependency */,
+			);
+			name = "Crazy CartsTests";
+			productName = "Crazy CartsTests";
+			productReference = 824E019E2606A41F003C7BB2 /* Crazy CartsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		824E01A82606A41F003C7BB2 /* Crazy CartsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 824E01B82606A41F003C7BB2 /* Build configuration list for PBXNativeTarget "Crazy CartsUITests" */;
+			buildPhases = (
+				824E01A52606A41F003C7BB2 /* Sources */,
+				824E01A62606A41F003C7BB2 /* Frameworks */,
+				824E01A72606A41F003C7BB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				824E01AB2606A41F003C7BB2 /* PBXTargetDependency */,
+			);
+			name = "Crazy CartsUITests";
+			productName = "Crazy CartsUITests";
+			productReference = 824E01A92606A41F003C7BB2 /* Crazy CartsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		824E01832606A41E003C7BB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					824E018A2606A41E003C7BB2 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					824E019D2606A41F003C7BB2 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 824E018A2606A41E003C7BB2;
+					};
+					824E01A82606A41F003C7BB2 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 824E018A2606A41E003C7BB2;
+					};
+				};
+			};
+			buildConfigurationList = 824E01862606A41E003C7BB2 /* Build configuration list for PBXProject "Crazy Carts" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 824E01822606A41E003C7BB2;
+			productRefGroup = 824E018C2606A41E003C7BB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				824E018A2606A41E003C7BB2 /* Crazy Carts */,
+				824E019D2606A41F003C7BB2 /* Crazy CartsTests */,
+				824E01A82606A41F003C7BB2 /* Crazy CartsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		824E01892606A41E003C7BB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				824E01912606A41E003C7BB2 /* art.scnassets in Resources */,
+				823400AB260A5E1D004999C8 /* SKOverlays in Resources */,
+				824E01982606A41F003C7BB2 /* Assets.xcassets in Resources */,
+				824E01962606A41E003C7BB2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		824E019C2606A41F003C7BB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		824E01A72606A41F003C7BB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		824E01872606A41E003C7BB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82340103260A7B9D004999C8 /* MainMenu.swift in Sources */,
+				8230F58C2607974D00E56154 /* GameViewController.swift in Sources */,
+				82340101260A7B9D004999C8 /* LevelStats.swift in Sources */,
+				824E018F2606A41E003C7BB2 /* AppDelegate.swift in Sources */,
+				82340102260A7B9D004999C8 /* LevelFailed.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		824E019A2606A41F003C7BB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				824E01A32606A41F003C7BB2 /* Crazy_CartsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		824E01A52606A41F003C7BB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				824E01AE2606A41F003C7BB2 /* Crazy_CartsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		824E01A02606A41F003C7BB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 824E018A2606A41E003C7BB2 /* Crazy Carts */;
+			targetProxy = 824E019F2606A41F003C7BB2 /* PBXContainerItemProxy */;
+		};
+		824E01AB2606A41F003C7BB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 824E018A2606A41E003C7BB2 /* Crazy Carts */;
+			targetProxy = 824E01AA2606A41F003C7BB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		824E01942606A41E003C7BB2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				824E01952606A41E003C7BB2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		824E01B02606A41F003C7BB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		824E01B12606A41F003C7BB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		824E01B32606A41F003C7BB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TZ447HXY7;
+				INFOPLIST_FILE = "Crazy Carts/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connolly.Crazy-Carts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		824E01B42606A41F003C7BB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TZ447HXY7;
+				INFOPLIST_FILE = "Crazy Carts/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connolly.Crazy-Carts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		824E01B62606A41F003C7BB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TZ447HXY7;
+				INFOPLIST_FILE = "Crazy CartsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connolly.Crazy-CartsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crazy Carts.app/Crazy Carts";
+			};
+			name = Debug;
+		};
+		824E01B72606A41F003C7BB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TZ447HXY7;
+				INFOPLIST_FILE = "Crazy CartsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connolly.Crazy-CartsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crazy Carts.app/Crazy Carts";
+			};
+			name = Release;
+		};
+		824E01B92606A41F003C7BB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TZ447HXY7;
+				INFOPLIST_FILE = "Crazy CartsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connolly.Crazy-CartsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Crazy Carts";
+			};
+			name = Debug;
+		};
+		824E01BA2606A41F003C7BB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TZ447HXY7;
+				INFOPLIST_FILE = "Crazy CartsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connolly.Crazy-CartsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Crazy Carts";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		824E01862606A41E003C7BB2 /* Build configuration list for PBXProject "Crazy Carts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				824E01B02606A41F003C7BB2 /* Debug */,
+				824E01B12606A41F003C7BB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		824E01B22606A41F003C7BB2 /* Build configuration list for PBXNativeTarget "Crazy Carts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				824E01B32606A41F003C7BB2 /* Debug */,
+				824E01B42606A41F003C7BB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		824E01B52606A41F003C7BB2 /* Build configuration list for PBXNativeTarget "Crazy CartsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				824E01B62606A41F003C7BB2 /* Debug */,
+				824E01B72606A41F003C7BB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		824E01B82606A41F003C7BB2 /* Build configuration list for PBXNativeTarget "Crazy CartsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				824E01B92606A41F003C7BB2 /* Debug */,
+				824E01BA2606A41F003C7BB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 824E01832606A41E003C7BB2 /* Project object */;
+}
